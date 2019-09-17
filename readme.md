@@ -4,10 +4,11 @@ An [*ArenaNET-approved<sup>TM</sup>*](https://www.reddit.com/r/Guildwars2/commen
 
 This fork is managed by [GW2 Developement Community](https://discord.gg/VmREt7X) and uses addon loader/addon manager.
 
+[![Build status](https://ci.appveyor.com/api/projects/status/437fhcd36bf0jkx5?svg=true)](https://ci.appveyor.com/project/megai2/gw2radial)
+
 ## Installation
-- Download and extract the archive ``GW2Radial.zip`` found in the [latest release](https://github.com/Friendly0Fire/GW2Radial/releases/latest).
-- Place ``d3d9.dll`` in your bin64 directory (default path: ``C:\Program Files\Guild Wars 2\bin64``).
-- Run the game! If everything was setup properly, you should be greeted by a prompt on your first launch.
+
+Use [addon manager](https://github.com/fmmmlee/GW2-Addon-Manager)
 
 ## Usage
 - When in game, press ``Shift+Alt+M`` for the options menu.
