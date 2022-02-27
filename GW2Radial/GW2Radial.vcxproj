@@ -249,8 +249,6 @@ cd "$(ProjectDir)shaders"
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
     </CopyFileToFolders>
     <None Include="art\finals\rcdata1.bin" />
-    <None Include="int\Shader_ps.cso" />
-    <None Include="int\Shader_vs.cso" />
     <None Include="Main.def" />
     <None Include="rt_rcdat.bin" />
   </ItemGroup>
@@ -318,6 +316,7 @@ cd "$(ProjectDir)shaders"
     <Image Include="art\Finals\tonic.dds" />
     <Image Include="art\Finals\travel.dds" />
     <Image Include="art\Finals\triangle_marker.dds" />
+    <Image Include="art\Finals\Turtle.dds" />
     <Image Include="art\Finals\Warclaw.dds" />
     <Image Include="art\Finals\WipeMask.dds" />
     <Image Include="art\Finals\x_marker.dds" />
