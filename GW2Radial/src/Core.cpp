@@ -32,7 +32,7 @@ namespace GW2Radial
 {
 void Core::Init(HMODULE dll)
 {
-	Log::i().Print(Severity::Info, "This is GW2Radial {}", GW2RADIAL_VER);
+	Log::i().Print(Severity::Info, "This is GW2Radial (D3D9) {}", GW2RADIAL_VER);
 
 #ifndef _DEBUG
 	if(auto addonFolder = GetAddonFolder(); addonFolder && std::filesystem::exists(*addonFolder / L"minidump.txt"))
@@ -354,17 +354,17 @@ void Core::DrawOver(IDirect3DDevice9* device, bool frameDrawn, bool sceneEnded)
 		Log::i().Draw();
 
 		if(!firstMessageShown_->value())
-			ImGuiPopup("Welcome to GW2Radial!").Position({0.5f, 0.45f}).Size({0.35f, 0.2f}).Display([&](const ImVec2& windowSize)
+			ImGuiPopup("Welcome to GW2Radial (D3D9)!").Position({0.5f, 0.45f}).Size({0.35f, 0.2f}).Display([&](const ImVec2& windowSize)
 			{
-				ImGui::TextWrapped("Welcome to GW2Radial! This small addon shows a convenient, customizable radial menu overlay to select a mount or novelty on the fly for Guild Wars 2: Path of Fire. "
+				ImGui::TextWrapped("Welcome to GW2Radial (D3D9)! This small addon shows a convenient, customizable radial menu overlay to select a mount or novelty on the fly for Guild Wars 2: Path of Fire. "
 				"To begin, use the shortcut Shift+Alt+M to open the settings menu and take a moment to bind your keys. If you ever need further assistance, please visit "
 				"this project's website at");
 
 				ImGui::Spacing();
 				ImGui::SetCursorPosX(windowSize.x * 0.1f);
 
-				if(ImGui::Button("https://github.com/Friendly0Fire/GW2Radial", ImVec2(windowSize.x * 0.8f, ImGui::GetFontSize() * 1.3f)))
-					ShellExecute(0, 0, L"https://github.com/Friendly0Fire/GW2Radial", 0, 0 , SW_SHOW );
+				if(ImGui::Button("https://github.com/gw2-addon-loader/GW2Radial", ImVec2(windowSize.x * 0.8f, ImGui::GetFontSize() * 1.3f)))
+					ShellExecute(0, 0, L"https://github.com/gw2-addon-loader/GW2Radial", 0, 0 , SW_SHOW );
 			}, [&]() { firstMessageShown_->value(true); });
 
 		if (!ConfigurationFile::i().lastSaveError().empty() && ConfigurationFile::i().lastSaveErrorChanged())
@@ -377,15 +377,15 @@ void Core::DrawOver(IDirect3DDevice9* device, bool frameDrawn, bool sceneEnded)
 		if(UpdateCheck::i().updateAvailable() && !UpdateCheck::i().updateDismissed())
 			ImGuiPopup("Update available!").Position({0.5f, 0.45f}).Size({0.35f, 0.2f}).Display([&](const ImVec2& windowSize)
 			{
-				ImGui::TextWrapped("A new version of GW2Radial has been released! "
+				ImGui::TextWrapped("A new version of GW2Radial (D3D9) has been released! "
 					"Please follow the link below to look at the changes and download the update. "
 					"Remember that you can always disable this version check in the settings.");
 
 				ImGui::Spacing();
 				ImGui::SetCursorPosX(windowSize.x * 0.1f);
 
-				if(ImGui::Button("https://github.com/Friendly0Fire/GW2Radial/releases/latest", ImVec2(windowSize.x * 0.8f, ImGui::GetFontSize() * 1.3f)))
-					ShellExecute(0, 0, L"https://github.com/Friendly0Fire/GW2Radial/releases/latest", 0, 0 , SW_SHOW );
+				if(ImGui::Button("https://github.com/gw2-addon-loader/GW2Radial/releases/latest", ImVec2(windowSize.x * 0.8f, ImGui::GetFontSize() * 1.3f)))
+					ShellExecute(0, 0, L"https://github.com/gw2-addon-loader/GW2Radial/releases/latest", 0, 0 , SW_SHOW );
 			}, []() { UpdateCheck::i().updateDismissed(true); });
 
 		ImGui::Render();

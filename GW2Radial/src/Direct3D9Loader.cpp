@@ -198,16 +198,16 @@ void Direct3D9Loader::Init(gw2al_core_vtable* gAPI)
 	d3d9_wrap.enable_event(METH_DEV_SetVertexShader, WRAP_CB_POST);
 	d3d9_wrap.enable_event(METH_DEV_SetPixelShader, WRAP_CB_POST);
 
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_DEV_Release", OnDevPostRelease, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_PRE_DEV_Present", OnDevPrePresent, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_PRE_DEV_Reset", OnDevPreReset, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_DEV_Reset", OnDevPostReset, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_DEV_CreateVertexShader", OnDevPostCreateVertexShader, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_DEV_CreatePixelShader", OnDevPostCreatePixelShader, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_DEV_SetVertexShader", OnDevPostSetVertexShader, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_DEV_SetPixelShader", OnDevPostSetPixelShader, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_PRE_OBJ_CreateDevice", OnObjPreCreateDevice, 0);
-	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial", L"D3D9_POST_OBJ_CreateDevice", OnObjPostCreateDevice, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_DEV_Release", OnDevPostRelease, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_PRE_DEV_Present", OnDevPrePresent, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_PRE_DEV_Reset", OnDevPreReset, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_DEV_Reset", OnDevPostReset, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_DEV_CreateVertexShader", OnDevPostCreateVertexShader, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_DEV_CreatePixelShader", OnDevPostCreatePixelShader, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_DEV_SetVertexShader", OnDevPostSetVertexShader, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_DEV_SetPixelShader", OnDevPostSetPixelShader, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_PRE_OBJ_CreateDevice", OnObjPreCreateDevice, 0);
+	D3D9_WRAPPER_WATCH_EVENT(L"gw2radial_d3d9", L"D3D9_POST_OBJ_CreateDevice", OnObjPostCreateDevice, 0);
 }
 
 }

@@ -23,7 +23,7 @@ void MiscTab::DrawMenu(Keybind**)
 {
 	ImGuiTitle("General");
 
-	ImGui::Text("Version %s", GW2RADIAL_VER);
+	ImGui::Text("Version %s (D3D9)", GW2RADIAL_VER);
 
 	ImGuiConfigurationWrapper(ImGui::Checkbox, UpdateCheck::i().checkEnabled_);
 

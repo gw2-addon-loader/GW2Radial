@@ -27,7 +27,7 @@ void WriteMiniDump(struct _EXCEPTION_POINTERS *pExceptionInfo)
 			time_t tNow = time(0);
 			tm t;
 			localtime_s(&t, &tNow);
-			wcsftime(szDumpPathFirst, sizeof(szDumpPathFirst), L"gw2radial_%d.%m.%Y_%H.%M.%S", &t);
+			wcsftime(szDumpPathFirst, sizeof(szDumpPathFirst), L"gw2radial_d3d9_%d.%m.%Y_%H.%M.%S", &t);
 
 			int n = 1;
 			do

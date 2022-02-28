@@ -1,6 +1,6 @@
 # GW2 Radial
 
-[![GitHub all releases](https://img.shields.io/github/downloads/Friendly0Fire/GW2Radial/total)](https://github.com/Friendly0Fire/GW2Radial/releases/latest) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Friendly0Fire/GW2Radial/CI)](https://github.com/Friendly0Fire/GW2Radial/actions/workflows/main.yml) [![Discord](https://img.shields.io/discord/384735285197537290?label=Discord)](https://discord.gg/zqeHCEg)
+[![GitHub all releases](https://img.shields.io/github/downloads/gw2-addon-loader/GW2Radial/total)](https://github.com/gw2-addon-loader/GW2Radial/releases/latest) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gw2-addon-loader/GW2Radial/CI)](https://github.com/gw2-addon-loader/GW2Radial/actions/workflows/main.yml) [![Discord](https://img.shields.io/discord/384735285197537290?label=Discord)](https://discord.gg/zqeHCEg)
 
 
 An [*ArenaNET-approved<sup>TM</sup>*](https://www.reddit.com/r/Guildwars2/comments/746mar/mount_radial_menu_addon_very_alpha_much_untested/dnwqj9x/) addon to show a convenient, customizable radial menu overlay to select a mount, novelty item and more, on the fly, for *Guild Wars 2*.
@@ -27,8 +27,8 @@ An [*ArenaNET-approved<sup>TM</sup>*](https://www.reddit.com/r/Guildwars2/commen
 - Run the game!
 
 ### Manual Installation
-- Download and extract the archive ``gw2radial.zip`` found in the [latest release](https://github.com/Friendly0Fire/GW2Radial/releases/latest).
-- Rename ``gw2addon_gw2radial.dll`` to ``d3d9.dll`` and place it in your bin64 directory (default path: ``C:\Program Files\Guild Wars 2\bin64``).
+- Download and extract the archive ``gw2radial_d3d9.zip`` found in the [latest release](https://github.com/gw2-addon-loader/GW2Radial/releases/latest).
+- Rename ``gw2addon_gw2radial_d3d9.dll`` to ``d3d9.dll`` and place it in your bin64 directory (default path: ``C:\Program Files\Guild Wars 2\bin64``).
 - Run the game! If everything was setup properly, you should be greeted by a prompt on your first launch.
 
 ## Usage

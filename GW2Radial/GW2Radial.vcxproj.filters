@@ -362,12 +362,6 @@
     <None Include="art\finals\rcdata1.bin">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="int\Shader_vs.cso">
-      <Filter>Resource Files\Assets</Filter>
-    </None>
-    <None Include="int\Shader_ps.cso">
-      <Filter>Resource Files\Assets</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">
@@ -452,6 +446,7 @@
     <Image Include="art\Finals\WipeMask.dds">
       <Filter>Resource Files\Assets</Filter>
     </Image>
+    <Image Include="art\Finals\Turtle.dds" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="art\Fonts\SourceSansPro-Black.ttf">

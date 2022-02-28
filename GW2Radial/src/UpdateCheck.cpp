@@ -103,11 +103,11 @@ retry:
 std::string UpdateCheck::FetchReleaseData() const
 {
 	std::string retVal;
-    if(const auto hInternet = InternetOpen(L"GW2Radial", INTERNET_OPEN_TYPE_DIRECT, nullptr, nullptr, 0); hInternet)
+    if(const auto hInternet = InternetOpen(L"GW2Radial_d3d9", INTERNET_OPEN_TYPE_DIRECT, nullptr, nullptr, 0); hInternet)
     {
         if(const auto hConnection = InternetConnect(hInternet, L"api.github.com", INTERNET_DEFAULT_HTTPS_PORT, L"", L"", INTERNET_SERVICE_HTTP, 0, 0); hConnection)
         {
-            const auto hRequest = HttpOpenRequest(hConnection, L"GET", L"repos/Friendly0Fire/GW2Radial/releases/latest",
+            const auto hRequest = HttpOpenRequest(hConnection, L"GET", L"repos/gw2-addon-loader/GW2Radial/releases/latest",
 				nullptr,
 				nullptr,
 				nullptr,

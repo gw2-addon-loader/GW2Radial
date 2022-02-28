@@ -12,8 +12,8 @@ gw2al_addon_dsc gAddonDeps[] = {
 };
 
 gw2al_addon_dsc gAddonDsc = {
-	L"gw2radial",
-	L"Radial menu overlay to select mount, novelty and more on fly",
+	L"gw2radial_d3d9",
+	L"Radial menu overlay to select mount, novelty and more on fly (D3D9)",
 	2,
 	1,
 	1,
@@ -89,7 +89,7 @@ bool WINAPI DllMain(HMODULE hModule, DWORD fdwReason, LPVOID lpReserved)
 	switch (fdwReason)
 	{
 	case DLL_PROCESS_ATTACH:
-	    g_logStream = std::ofstream("gw2radial.log");
+	    g_logStream = std::ofstream("gw2radial_d3d9.log");
 
 		GW2Radial::Core::Init(hModule);
 		break;

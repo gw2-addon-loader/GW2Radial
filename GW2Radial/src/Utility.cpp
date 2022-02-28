@@ -152,7 +152,7 @@ std::optional<std::filesystem::path> GetDocumentsFolder()
 
 std::optional<std::filesystem::path> GetAddonFolder()
 {
-    auto folder = (GetGameFolder() / "addons/gw2radial").make_preferred();
+    auto folder = (GetGameFolder() / "addons/gw2radial_d3d9").make_preferred();
 
     if (std::filesystem::is_directory(folder))
         return folder;
@@ -168,7 +168,7 @@ std::optional<std::filesystem::path> GetAddonFolder()
         return std::nullopt;
     }
 
-    folder = (*docs / "addons/gw2radial").make_preferred();
+    folder = (*docs / "addons/gw2radial_d3d9").make_preferred();
 
     if (std::filesystem::is_directory(folder))
         return folder;

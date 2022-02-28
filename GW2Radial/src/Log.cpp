@@ -20,7 +20,7 @@ void Log::Draw()
         return;
 
     ImGui::SetNextWindowSize({ 800, 400 }, ImGuiCond_FirstUseEver);
-    if (!ImGui::Begin("GW2Radial Log Window", &isVisible_))
+    if (!ImGui::Begin("GW2Radial (D3D9) Log Window", &isVisible_))
     {
         ImGui::End();
         return;
