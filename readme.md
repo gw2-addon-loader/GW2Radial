@@ -1,7 +1,8 @@
 # GW2 Radial
 
-[![GitHub all releases](https://img.shields.io/github/downloads/gw2-addon-loader/GW2Radial/total)](https://github.com/gw2-addon-loader/GW2Radial/releases/latest) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gw2-addon-loader/GW2Radial/CI)](https://github.com/gw2-addon-loader/GW2Radial/actions/workflows/main.yml) [![Discord](https://img.shields.io/discord/384735285197537290?label=Discord)](https://discord.gg/zqeHCEg)
+# This version is no longer functional. Please see the main release here: https://github.com/Friendly0Fire/GW2Radial
 
+---------------
 
 An [*ArenaNET-approved<sup>TM</sup>*](https://www.reddit.com/r/Guildwars2/comments/746mar/mount_radial_menu_addon_very_alpha_much_untested/dnwqj9x/) addon to show a convenient, customizable radial menu overlay to select a mount, novelty item and more, on the fly, for *Guild Wars 2*.
 
